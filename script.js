@@ -26,11 +26,7 @@ function renderBooks() {
 
     const authorElement = document.createElement('p');
     authorElement.textContent = `Author: ${book.author}`;
-
-    const hr = document.createElement("hr");
-    
-
-
+    const hr = document.createElement('hr');
     const removeButton = document.createElement('button');
     removeButton.textContent = 'Remove';
     removeButton.addEventListener('click', () => {
