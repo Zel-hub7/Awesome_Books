@@ -12,7 +12,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Capstone-Porject-1\] ](#-capstone-porject-1-)
+- [📖 \[Awesome Books\] ](#-awesome-books-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -30,7 +30,7 @@
 
 
 
-# 📖 [Capstone-Porject-1] <a name="about-project"></a>
+# 📖 [Awesome Books] <a name="about-project"></a>
 
 A simple Book storing web app. 
 
