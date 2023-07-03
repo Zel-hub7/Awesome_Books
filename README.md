@@ -39,8 +39,7 @@ A simple Book storing web app.
 ### Tech Stack <a name="tech-stack"></a>
 1. Linters
 2. HTML5
-3. cSS3
-4. JS
+3. JS
 
 ### Key Features <a name="key-features"></a>
 
@@ -82,6 +81,11 @@ npx stylelint "*/.{css,scss}"
 
 - GitHub: [@Zelalem](https://github.com/Zel-hub7)
 - LinkedIn: [@Zelalem](https://linkedin.com/in/linkedinhandle)
+
+👤 **Author2**
+
+- GitHub: [@GhostEsso](https://github.com/GhostEsso)
+- LinkedIn: [@essohanam](https://www.linkedin.com/in/essohanam-tambana-62aa081a1/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
