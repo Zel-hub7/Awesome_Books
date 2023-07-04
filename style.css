@@ -5,28 +5,31 @@
   margin-left: 20%;
   border: solid black;
 }
-.added {
- 
-}
+
 #title {
   width: 50%;
   border: solid black;
 }
+
 #book-collection-title {
   margin-left: 40%;
 }
+
 #author {
   width: 50%;
   border: solid black;
 }
+
 .book-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 .book-item p {
   margin-left: 2%;
 }
+
 .book-item button {
   height: max-content;
   margin-top: 2%;
@@ -34,24 +37,27 @@
   border-width: medium;
   margin-right: 2%;
 }
+
 .even {
   background-color: rgb(177, 173, 173);
-  
 }
+
 .form-title {
   font-weight: bolder;
 }
+
 .form {
   display: flex;
   flex-direction: column;
   margin-left: 40%;
   row-gap: 5px;
 }
+
 .input {
   width: 50%;
 }
+
 #btn {
   width: 10%;
   margin-left: 41%;
-  
 }
