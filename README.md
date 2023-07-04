@@ -89,8 +89,8 @@ npx stylelint "*/.{css,scss}"
 
 👤 **Author3**
 
-- GitHub: [@GhostEsso](https://github.com/Lawmsangi)
-- LinkedIn: [@essohanam](https://www.linkedin.com/in/lawmsangi-varte-baa429244/)
+- GitHub: [@Lawmsangi](https://github.com/Lawmsangi)
+- LinkedIn: [@lawmsangi](https://www.linkedin.com/in/lawmsangi-varte-baa429244/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
