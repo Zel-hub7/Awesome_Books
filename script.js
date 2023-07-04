@@ -19,7 +19,7 @@ class BookCollection {
   renderBooks() {
     const booksContainer = document.getElementById('books-container');
     booksContainer.innerHTML = '';
-    const titles = document.querySelectorAll('.form-title')
+    const titles = document.querySelectorAll('.form-title');
 
     this.books.forEach((book, index) => {
       const bookElement = document.createElement('div');
@@ -31,13 +31,13 @@ class BookCollection {
       }
       const titleElement = document.createElement('p');
       titleElement.textContent = `"${book.title}" by ${book.author}`;
-      
+
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Remove';
       removeButton.addEventListener('click', () => {
         this.removeBook(book.title);
       });
-     
+
       bookElement.appendChild(titleElement);
       bookElement.appendChild(removeButton);
 
@@ -47,13 +47,12 @@ class BookCollection {
     // Check if there are any book items
     const bookItems = document.querySelectorAll('.book-item');
     const bookCollectionTitle = document.getElementById('book-collection-title');
-    if (bookItems.length > 0) { 
+    if (bookItems.length > 0) {
       bookCollectionTitle.textContent = 'All Awesome Books';
       booksContainer.style.border = ' solid black'; // Apply black border
     } else {
       bookCollectionTitle.textContent = '';
       booksContainer.style.border = 'none'; // Remove border
-     
     }
   }
 
