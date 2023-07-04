@@ -3,16 +3,49 @@
   flex-direction: column;
   width: 60%;
   border: solid black;
-  
   margin-left: 20%;
-  
-  
 }
-.body {
- 
+#title {
+  width: 50%;
+}
+#titles {
+  margin-left: 40%;
+}
+#author {
+  width: 50%;
 }
 .book-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.book-item p {
+  margin-left: 2%;
+}
+.book-item button {
+  height: max-content;
+  margin-top: 2%;
+  border: solid black;
+  border-width: medium;
+  margin-right: 2%;
+}
+.even {
+  background-color: silver;
+  
+}
+.form-title {
+  font-weight: bolder;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  row-gap: 5px;
+}
+.input {
+  width: 50%;
+}
+#btn {
+  width: 10%;
+  margin-left: 41%;
 }

@@ -8,20 +8,21 @@
 </head>
 
 <body class="body">
-    <h1>All awesome books</h1>
+    <h1 id = "titles">All awesome books</h1>
 
     <div id="books-container">
        
     </div>
 
-    <form id="add-book-form">
-        <label for="title">Title:</label>
-        <input type="text" id="title" required>
-        <br> <br>
-        <label for="author">Author:</label>
-        <input type="text" id="author" required>
-        <br> <br>
-        <button type="submit">Add Book</button>
+    <form class="form" id="add-book-form">
+        <h1 class="form-title">Add a new Book</h1>
+        <label for="title"></label>
+        <input placeholder="Title" type="text" id="title" required>
+      
+        <label for="author"></label>
+        <input placeholder="Author" type="text" id="author" required>
+     
+        <button id = "btn" type="submit">Add Book</button>
     </form>
 
 

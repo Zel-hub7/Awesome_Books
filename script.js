@@ -1,17 +1,17 @@
 class BookCollection {
   constructor() {
-    this.booksCollection = [];
+    this.books = [];
   }
 
   addBook(title, author) {
     const book = { title, author };
-    this.booksCollection.push(book);
+    this.books.push(book);
     this.renderBooks();
     this.saveToLocalStorage();
   }
 
   removeBook(title) {
-    this.booksCollection = this.booksCollection.filter((book) => book.title !== title);
+    this.books = this.books.filter((book) => book.title !== title);
     this.renderBooks();
     this.saveToLocalStorage();
   }
@@ -20,17 +20,18 @@ class BookCollection {
     const booksContainer = document.getElementById('books-container');
     booksContainer.innerHTML = '';
 
-    this.booksCollection.forEach((book) => {
+    this.books.forEach((book, index) => {
       const bookElement = document.createElement('div');
       bookElement.classList.add('book-item');
+      if (index % 2 === 0) {
+        bookElement.classList.add('even');
+      } else {
+        bookElement.classList.add('odd');
+      }
 
       const titleElement = document.createElement('p');
       titleElement.textContent = `"${book.title}" by ${book.author}`;
 
-      const authorElement = document.createElement('p');
-      authorElement.textContent = `Author: ${book.author}`;
-
-      const hr = document.createElement('hr');
       const removeButton = document.createElement('button');
       removeButton.textContent = 'Remove';
       removeButton.addEventListener('click', () => {
@@ -38,22 +39,20 @@ class BookCollection {
       });
 
       bookElement.appendChild(titleElement);
-      // bookElement.appendChild(authorElement);
       bookElement.appendChild(removeButton);
-      // bookElement.appendChild(hr);
 
       booksContainer.appendChild(bookElement);
     });
   }
 
   saveToLocalStorage() {
-    localStorage.setItem('booksCollection', JSON.stringify(this.booksCollection));
+    localStorage.setItem('booksCollection', JSON.stringify(this.books));
   }
 
   loadFromLocalStorage() {
     const storedBooksCollection = localStorage.getItem('booksCollection');
     if (storedBooksCollection) {
-      this.booksCollection = JSON.parse(storedBooksCollection);
+      this.books = JSON.parse(storedBooksCollection);
       this.renderBooks();
     }
   }
