@@ -3,24 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Awesome Books</title>
 </head>
 
-<body>
-    <h1>Awesome Books</h1>
+<body class="body">
+    <h1 class = "titles"></h1>
+    <h1 id = "book-collection-title"></h1>
 
     <div id="books-container">
        
     </div>
 
-    <form id="add-book-form">
-        <label for="title">Title:</label>
-        <input type="text" id="title" required>
-        <br> <br>
-        <label for="author">Author:</label>
-        <input type="text" id="author" required>
-        <br> <br>
-        <button type="submit">Add Book</button>
+    <form class="form" id="add-book-form">
+        <h1 class="form-title">Add a new Book</h1>
+        <label for="title"></label>
+        <input placeholder="Title" type="text" id="title" required>
+      
+        <label for="author"></label>
+        <input placeholder="Author" type="text" id="author" required>
+     
+        <button id = "btn" type="submit">Add Book</button>
     </form>
 
 
