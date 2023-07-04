@@ -68,6 +68,7 @@ To run tests, run the following command:
 
 npx hint .
 npx stylelint "*/.{css,scss}"
+npx eslint .
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
