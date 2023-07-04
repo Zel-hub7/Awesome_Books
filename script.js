@@ -1,58 +1,65 @@
-let booksCollection = [];
+class BookCollection {
+  constructor() {
+    this.booksCollection = [];
+  }
 
-function addBook(title, author) {
-  const book = { title, author };
-  booksCollection.push(book);
-  renderBooks();
-  saveToLocalStorage();
-}
+  addBook(title, author) {
+    const book = { title, author };
+    this.booksCollection.push(book);
+    this.renderBooks();
+    this.saveToLocalStorage();
+  }
 
-function removeBook(title) {
-  booksCollection = booksCollection.filter((book) => book.title !== title);
-  renderBooks();
-  saveToLocalStorage();
-}
+  removeBook(title) {
+    this.booksCollection = this.booksCollection.filter((book) => book.title !== title);
+    this.renderBooks();
+    this.saveToLocalStorage();
+  }
 
-function renderBooks() {
-  const booksContainer = document.getElementById('books-container');
-  booksContainer.innerHTML = '';
+  renderBooks() {
+    const booksContainer = document.getElementById('books-container');
+    booksContainer.innerHTML = '';
 
-  booksCollection.forEach((book) => {
-    const bookElement = document.createElement('div');
-    bookElement.classList.add('book-item');
+    this.booksCollection.forEach((book) => {
+      const bookElement = document.createElement('div');
+      bookElement.classList.add('book-item');
 
-    const titleElement = document.createElement('p');
-    titleElement.textContent = `Title: ${book.title}`;
+      const titleElement = document.createElement('p');
+      titleElement.textContent = `"${book.title}" by ${book.author}`;
 
-    const authorElement = document.createElement('p');
-    authorElement.textContent = `Author: ${book.author}`;
-    const hr = document.createElement('hr');
-    const removeButton = document.createElement('button');
-    removeButton.textContent = 'Remove';
-    removeButton.addEventListener('click', () => {
-      removeBook(book.title);
+      const authorElement = document.createElement('p');
+      authorElement.textContent = `Author: ${book.author}`;
+
+      const hr = document.createElement('hr');
+      const removeButton = document.createElement('button');
+      removeButton.textContent = 'Remove';
+      removeButton.addEventListener('click', () => {
+        this.removeBook(book.title);
+      });
+
+      bookElement.appendChild(titleElement);
+      // bookElement.appendChild(authorElement);
+      bookElement.appendChild(removeButton);
+      // bookElement.appendChild(hr);
+
+      booksContainer.appendChild(bookElement);
     });
+  }
 
-    bookElement.appendChild(titleElement);
-    bookElement.appendChild(authorElement);
-    bookElement.appendChild(removeButton);
-    bookElement.appendChild(hr);
+  saveToLocalStorage() {
+    localStorage.setItem('booksCollection', JSON.stringify(this.booksCollection));
+  }
 
-    booksContainer.appendChild(bookElement);
-  });
-}
-
-function saveToLocalStorage() {
-  localStorage.setItem('booksCollection', JSON.stringify(booksCollection));
-}
-
-function loadFromLocalStorage() {
-  const storedBooksCollection = localStorage.getItem('booksCollection');
-  if (storedBooksCollection) {
-    booksCollection = JSON.parse(storedBooksCollection);
-    renderBooks();
+  loadFromLocalStorage() {
+    const storedBooksCollection = localStorage.getItem('booksCollection');
+    if (storedBooksCollection) {
+      this.booksCollection = JSON.parse(storedBooksCollection);
+      this.renderBooks();
+    }
   }
 }
+
+const bookCollection = new BookCollection();
 
 const addBookForm = document.getElementById('add-book-form');
 addBookForm.addEventListener('submit', (event) => {
@@ -62,10 +69,10 @@ addBookForm.addEventListener('submit', (event) => {
   const title = titleInput.value;
   const author = authorInput.value;
 
-  addBook(title, author);
+  bookCollection.addBook(title, author);
 
   titleInput.value = '';
   authorInput.value = '';
 });
 
-loadFromLocalStorage();
+bookCollection.loadFromLocalStorage();

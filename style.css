@@ -1,4 +1,18 @@
-#add-book-form {
+#books-container {
   display: flex;
   flex-direction: column;
+  width: 60%;
+  border: solid black;
+  
+  margin-left: 20%;
+  
+  
+}
+.body {
+ 
+}
+.book-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
