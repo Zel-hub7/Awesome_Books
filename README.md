@@ -68,6 +68,7 @@ To run tests, run the following command:
 
 npx hint .
 npx stylelint "*/.{css,scss}"
+npx eslint .
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,6 +87,11 @@ npx stylelint "*/.{css,scss}"
 
 - GitHub: [@GhostEsso](https://github.com/GhostEsso)
 - LinkedIn: [@essohanam](https://www.linkedin.com/in/essohanam-tambana-62aa081a1/)
+
+👤 **Author3**
+
+- GitHub: [@Lawmsangi](https://github.com/Lawmsangi)
+- LinkedIn: [@lawmsangi](https://www.linkedin.com/in/lawmsangi-varte-baa429244/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
