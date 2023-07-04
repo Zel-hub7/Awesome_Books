@@ -19,8 +19,6 @@ class BookCollection {
   renderBooks() {
     const booksContainer = document.getElementById('books-container');
     booksContainer.innerHTML = '';
-    const titles = document.querySelectorAll('.form-title');
-
     this.books.forEach((book, index) => {
       const bookElement = document.createElement('div');
       bookElement.classList.add('book-item');
