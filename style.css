@@ -49,11 +49,13 @@
 .even {
   background-color: rgb(255, 255, 255);
 }
+
 .odd {
   background-color: rgb(40, 40, 255);
   color: white;
 
 }
+
 .form-title {
   font-weight: bolder;
 }
@@ -78,33 +80,43 @@
   border: solid green;
   padding: 3px;
 }
+
 ul {
   list-style: none;
   display: flex;
   text-decoration: none;
   column-gap: 7px;
 }
+
 ul li a {
   text-decoration: none;
 }
+
 .navigation {
   display: flex;
   justify-content: space-between;
   margin: 3%;
   border: solid black;
   padding: 5px;
-
 }
+
+.navigation ul li a:hover {
+  color: red;
+}
+
 .remove {
   display: none;
 }
+
 #logo {
   text-decoration: none;
   color: black;
 }
+
 #about {
   margin-left: 20%;
 }
+
 .about-list {
   display: flex;
   flex-direction: column;
@@ -112,18 +124,22 @@ ul li a {
   margin-top: 2%;
   list-style-type: disc;
 }
+
 .contact p {
    margin-top: 2%;
 }
+
 .footer {
   margin: 3%;
   border: solid black;
 
 }
+
 .foot {
   margin-left: 2%;
   padding: 5px;
 }
+
 #time {
   float: right;
   margin-right: 5%;
