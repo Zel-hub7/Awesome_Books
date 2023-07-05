@@ -47,7 +47,7 @@ class BookCollection {
     const bookCollectionTitle = document.getElementById('book-collection-title');
     if (bookItems.length > 0) {
       bookCollectionTitle.textContent = 'All Awesome Books';
-      booksContainer.style.border = ' solid black'; // Apply black border
+      booksContainer.style.border = 'solid black'; // Apply black border
     } else {
       bookCollectionTitle.textContent = '';
       booksContainer.style.border = 'none'; // Remove border
@@ -63,6 +63,7 @@ class BookCollection {
     if (storedBooksCollection) {
       this.books = JSON.parse(storedBooksCollection);
       this.renderBooks();
+      
     }
   }
 }
@@ -84,3 +85,19 @@ addBookForm.addEventListener('submit', (event) => {
 });
 
 bookCollection.loadFromLocalStorage();
+
+// Add event listeners to the links
+const allBooksLink = document.getElementById('all-books-link');
+const addBookLink = document.getElementById('add-book-link');
+const allBooksContainer = document.getElementById('all-books-container');
+const addBookContainer = document.getElementById('add-book-container');
+
+allBooksLink.addEventListener('click', () => {
+  allBooksContainer.style.display = 'block'; // Show all books container
+  addBookContainer.style.display = 'none'; // Hide add book container
+});
+
+addBookLink.addEventListener('click', () => {
+  allBooksContainer.style.display = 'none'; // Hide all books container
+  addBookContainer.style.display = 'block'; // Show add book container
+});
