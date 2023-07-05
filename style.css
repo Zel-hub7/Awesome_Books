@@ -91,9 +91,30 @@ ul li a {
   text-decoration: none;
   color: black;
 }
-.about {
+#about {
   margin-left: 20%;
 }
 .about-list {
-  
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 2%;
+  list-style-type: disc;
+}
+.contact p {
+   margin-top: 2%;
+}
+.footer {
+  margin: 3%;
+  border: solid black;
+
+}
+.foot {
+  margin-left: 2%;
+  padding: 5px;
+}
+#time {
+  float: right;
+  margin-right: 5%;
+  margin-top: -2%;
 }

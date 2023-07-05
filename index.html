@@ -9,39 +9,72 @@
 </head>
 
 <body class="body">
-    <div class="navigation">
-        <h2 class="logo"><a id = "logo" href="index.html">Awesome Books</a></h2>
-        <ul>
-          <li><a id="all-books-link" href="#">Lists</a></li>
-          <li>|</li>
-          <li><a id="add-book-link" href="#">Add New</a></li>
-          <li>|</li>
-          <li><a id = "contact" href="contact.html">Contact</a></li>
-        </ul>
-      </div>
+    <div class="nav">
+
+
+        <div class="navigation">
+            <h2 class="logo"><a id="logo" href="index.html">Awesome Books</a></h2>
+            <ul>
+                <li><a id="all-books-link" href="#">Lists</a></li>
+                <li>|</li>
+                <li><a id="add-book-link" href="#">Add New</a></li>
+                <li>|</li>
+                <li><a id="contact" href="#">Contact</a></li>
+            </ul>
+        </div>
+        <time id = "time" datetime="2021-04-19">Match 19th 2021, 9:25:32 am</time>
+
+    </div>
     <div id="all-books-container">
 
-    
-    <h1 class="titles"></h1>
-    <h1 id="book-collection-title"></h1>
 
-    <div id="books-container">
+        <h1 class="titles"></h1>
+        <h1 id="book-collection-title"></h1>
+
+        <div id="books-container">
+
+        </div>
+    </div>
+    <div id="add-book-container">
+        <form class="form" id="add-book-form">
+            <h1 class="form-title">Add a new Book</h1>
+            <label for="title"></label>
+            <input placeholder="Title" type="text" id="title" required>
+
+            <label for="author"></label>
+            <input placeholder="Author" type="text" id="author" required>
+
+            <button id="btn" type="submit">Add Book</button>
+        </form>
 
     </div>
-    </div>
-<div id="add-book-container">
-    <form class="form" id="add-book-form">
-        <h1 class="form-title">Add a new Book</h1>
-        <label for="title"></label>
-        <input placeholder="Title" type="text" id="title" required>
 
-        <label for="author"></label>
-        <input placeholder="Author" type="text" id="author" required>
+    <section>
+        <div id="about">
+            <div class="contact">
+                <h1>Contact Information</h1>
+                <p>Do you have any questions or you want to say "Hello"?
+                    <br> You can reach out to us!
+                </p>
 
-        <button id="btn" type="submit">Add Book</button>
-    </form>
+            </div>
 
-</div>
+            <ul class="about-list">
+                <li>Our e-mail: mail@gmail.com</li>
+                <li>Our Phone number: 0043586534422</li>
+                <li>Our address: streetname 22, 84503 City, Country</li>
+            </ul>
+
+        </div>
+
+
+    </section>
+    <footer class="footer">
+        <div class="foot">
+            <h2>Copyright</h2>
+        </div>
+
+    </footer>
 
     <script src="script.js"></script>
 </body>
