@@ -33,20 +33,27 @@
 
 .book-item p {
   margin-left: 2%;
+  margin-top: 2%;
 }
 
 .book-item button {
   height: max-content;
   margin-top: 2%;
-  border: solid black;
-  border-width: medium;
+  background-color: rgb(255, 17, 0);
+  border: solid red;
+  color: white;
   margin-right: 2%;
+  margin-bottom: 1%;
 }
 
 .even {
-  background-color: rgb(177, 173, 173);
+  background-color: rgb(255, 255, 255);
 }
+.odd {
+  background-color: rgb(40, 40, 255);
+  color: white;
 
+}
 .form-title {
   font-weight: bolder;
 }
