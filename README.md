@@ -47,8 +47,6 @@ A simple Book storing web app.
 - **Add books** The user can remove any of the books they added to the list.
 - **Persistent data** The book list is persistent even when the user refreshed the page.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,6 +101,8 @@ npx stylelint "*/.{css,scss}"
 
 
 ## 🔭 Future Features <a name="future-features">
+**Add books** The user can add a new book to the book list and put on the data base by server side language.
+- **Add books** The user can remove any of the books they added to the list and removed from the database too..
 
 
 
