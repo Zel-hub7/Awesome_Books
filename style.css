@@ -1,6 +1,5 @@
 * {
   margin: 0;
-
 }
 
 #books-container {
@@ -54,7 +53,6 @@
 .odd {
   background-color: rgb(40, 40, 255);
   color: white;
-
 }
 
 .form-title {
@@ -66,7 +64,6 @@
   flex-direction: column;
   margin-left: 40%;
   row-gap: 5px;
-  
 }
 
 .input {
@@ -127,13 +124,12 @@ ul li a {
 }
 
 .contact p {
-   margin-top: 2%;
+  margin-top: 2%;
 }
 
 .footer {
   margin: 3%;
   border: solid black;
-
 }
 
 .foot {
