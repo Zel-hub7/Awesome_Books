@@ -44,10 +44,11 @@
   color: white;
   margin-right: 2%;
   margin-bottom: 1%;
+  padding: 5px;
 }
 
 .even {
-  background-color: rgb(255, 255, 255);
+  background-color: silver;
 }
 
 .odd {
