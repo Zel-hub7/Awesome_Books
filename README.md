@@ -56,7 +56,7 @@ A simple Book storing web app.
 
 ### setup
 <p>Clone this repository to your desired folder</p>
-<a href ="https://github.com/Zel-hub7/Awesome_Books.git"></a>
+<p><a href ="https://github.com/Zel-hub7/Awesome_Books.git"></a></p>
 
 ### Install
 
