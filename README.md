@@ -43,6 +43,12 @@ A simple Book storing web app.
 
 ### Key Features <a name="key-features"></a>
 
+- **Add books** The user can add a new book to the book list.
+- **Add books** The user can remove any of the books they added to the list.
+- **Persistent data** The book list is persistent even when the user refreshed the page.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
