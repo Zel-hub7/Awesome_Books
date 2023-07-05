@@ -93,7 +93,6 @@ const allBooksContainer = document.getElementById('all-books-container');
 const addBookContainer = document.getElementById('add-book-container');
 const about = document.getElementById('about');
 
-
 about.style.display = 'none';
 addBookContainer.style.display = 'none';
 allBooksLink.addEventListener('click', () => {
