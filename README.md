@@ -1,10 +1,10 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
+  
   <br/>
 
-  <h3><b>Awesome books</b></h3>
+  <h1><b>Awesome books</b></h1>
 
 </div>
 
@@ -43,6 +43,10 @@ A simple Book storing web app.
 
 ### Key Features <a name="key-features"></a>
 
+- **Add books** The user can add a new book to the book list.
+- **Add books** The user can remove any of the books they added to the list.
+- **Persistent data** The book list is persistent even when the user refreshed the page.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -50,7 +54,7 @@ A simple Book storing web app.
 
 ### setup
 <p>Clone this repository to your desired folder</p>
-<a href ="https://github.com/Zel-hub7/Awesome_Books.git"></a>
+<p><a href ="https://github.com/Zel-hub7/Awesome_Books.git"></a></p>
 
 ### Install
 
@@ -97,6 +101,8 @@ npx stylelint "*/.{css,scss}"
 
 
 ## 🔭 Future Features <a name="future-features">
+**Add books** The user can add a new book to the book list and put on the data base by server side language.
+- **Add books** The user can remove any of the books they added to the list and removed from the database too..
 
 
 

@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+}
+
 #books-container {
   display: flex;
   flex-direction: column;
@@ -28,18 +32,27 @@
 
 .book-item p {
   margin-left: 2%;
+  margin-top: 2%;
 }
 
 .book-item button {
   height: max-content;
   margin-top: 2%;
-  border: solid black;
-  border-width: medium;
+  background-color: rgb(255, 17, 0);
+  border: solid red;
+  color: white;
   margin-right: 2%;
+  margin-bottom: 1%;
+  padding: 5px;
 }
 
 .even {
-  background-color: rgb(177, 173, 173);
+  background-color: silver;
+}
+
+.odd {
+  background-color: rgb(40, 40, 255);
+  color: white;
 }
 
 .form-title {
@@ -60,4 +73,72 @@
 #btn {
   width: 10%;
   margin-left: 41%;
+  background-color: green;
+  color: white;
+  border: solid green;
+  padding: 3px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  text-decoration: none;
+  column-gap: 7px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
+  border: solid black;
+  padding: 5px;
+}
+
+.navigation ul li a:hover {
+  color: red;
+}
+
+.remove {
+  display: none;
+}
+
+#logo {
+  text-decoration: none;
+  color: black;
+}
+
+#about {
+  margin-left: 20%;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  margin-top: 2%;
+  list-style-type: disc;
+}
+
+.contact p {
+  margin-top: 2%;
+}
+
+.footer {
+  margin: 3%;
+  border: solid black;
+}
+
+.foot {
+  margin-left: 2%;
+  padding: 5px;
+}
+
+#time {
+  float: right;
+  margin-right: 5%;
+  margin-top: -2%;
 }
